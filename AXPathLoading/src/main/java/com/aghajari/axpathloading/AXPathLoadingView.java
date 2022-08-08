@@ -121,7 +121,8 @@ public class AXPathLoadingView extends View {
     private void createPath(Context context, String name, AttributeSet attrs) {
         if (name == null || name.trim().isEmpty())
             return;
-
+        
+        name = name.trim();
         int indexOfTag = name.indexOf('#');
         if (indexOfTag == -1)
             throw new IllegalStateException(attrs.getPositionDescription() +
