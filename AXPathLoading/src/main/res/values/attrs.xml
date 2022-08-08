@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AXPathLoadingView">
+        <attr name="trackColor" format="color" />
+        <attr name="progressColor" format="color" />
+
+        <attr name="thickness" format="dimension" />
+
+        <attr name="progressSize" format="float" />
+        <attr name="alphaStart" format="float" />
+
+        <attr name="delay" format="integer" />
+        <attr name="animationDuration" format="integer" />
+
+        <attr name="alphaAnimation" format="boolean" />
+        <attr name="autoStart" format="boolean" />
+
+        <!-- Name of the method to create android.graphics.Path for this view.
+             This name must correspond to a public static method that takes
+             exactly one parameter of type AXPathLoadingView and returns a Path.
+             If the name starts with a '.', application package is prefixed.
+             For instance, if you specify <code>app:path="#create"</code>,
+             you must declare a <code>public static Path create(AXPathLoadingView v)</code>
+             method of your context (typically, your Activity) and if you specify
+             <code>app:path=".Paths#createPath"</code>, you must declare a
+             <code>public static Path createPath(AXPathLoadingView v)</code>
+             method in that Paths class in your package.-->
+        <attr name="path" format="string" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.aghajari.axpathloading.AXPathLoadingView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:alphaStart="0.68"
+        app:path=".Paths#createHR"
+        app:progressColor="#0AB28C"
+        app:thickness="11dp"
+        app:trackColor="#300AB28C" />
+
+    <com.aghajari.axpathloading.AXPathLoadingView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:animationDuration="1800"
+        app:delay="200"
+        app:path=".Paths#createHeart"
+        app:progressColor="#C5227A"
+        app:thickness="16dp"
+        app:trackColor="#30C5227A"/>
+
+</LinearLayout>
